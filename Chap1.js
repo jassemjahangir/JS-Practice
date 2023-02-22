@@ -2,6 +2,8 @@
 
 /*
 
+Summary
+
 00001101 <-- binary number
 8+4+1=13
 

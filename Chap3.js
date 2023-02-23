@@ -211,3 +211,36 @@ code—for example, it doesn’t read global bindings whose value might
 change.
 
 */
+
+// Minimum
+
+/* 
+const minimum = function (a, b) {
+    if (a < b)
+        return a;
+    else if (a > b)
+        return b;
+    else
+        return null;
+}
+
+console.log(minimum(0, 10));
+console.log(minimum(0, -10));
+console.log(minimum(2, 2)); 
+*/
+
+const isEven = function (a) {
+    if (a < 0)
+        return null;
+    else if (a == 0)
+        return "even";
+    else if (a == 1)
+        return "odd";
+    else
+        return isEven(a - 2);
+
+}
+
+console.log(isEven(50));
+console.log(isEven(75));
+console.log(isEven(-1));
